@@ -1,0 +1,257 @@
+@font-face {
+    font-family: 'urbanistregular';
+    src: url('urbanist-variablefont_wght.woff2') format('woff2'),
+         url('urbanist-variablefont_wght.woff') format('woff');
+    font-style: normal;
+}
+
+body{
+    margin: 0;
+    font-family: 'urbanistregular';
+}
+
+h1,h2,h3,h4{
+    margin: 0;
+}
+
+.main-color{
+    color: rgb(89, 209, 209);
+}
+
+header ul{
+    margin: 0;
+    list-style: none;
+    padding: 0;
+    font-weight:bold;
+}
+
+.bold{
+    font-weight: bold;
+}
+
+header{
+        background-color: black;
+        color: white;;
+        display: flex;
+        flex-direction: column;
+        gap: 25px;
+        justify-content: center;
+        align-items: center;
+        margin: 0;
+        padding-top: 5%;
+        padding-bottom: 2.5%;
+        font-size: xx-large;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    padding-top: 2.5%;
+    padding-bottom: 2.5%;
+}
+
+.container-row{
+    display: flex;
+    gap: 40px;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+}
+
+.row{
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+}
+
+.countdown-mobile{
+    display: none;
+    gap: 5px;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+}
+
+.countdown-desktop{
+    display: flex;
+    gap: 25px;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+}
+
+.grey-background{
+    background-color: rgb(59, 59, 59);
+    color: white;
+}
+
+.black-background{
+    background-color: black;
+    color: white;
+}
+
+.dog-image{
+    height: 350px;
+}
+
+.arrow{
+    height: 60px;
+    width: 75px;
+}
+
+.zoomonhover{
+    transition: transform 0.5s;
+    cursor: pointer;
+}
+
+.zoomonhover:hover{
+    transform: scale(1.2);
+}
+
+.center-elements{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.no-style-list{
+    list-style: none;
+    padding: 0;
+}
+
+.font-large{
+    font-size: x-large;
+}
+
+.font-xxlarge{
+    font-size: xx-large;
+}
+
+.icon{
+    height: 50px;
+    width: 50px;
+}
+
+nav{
+    position: fixed;
+    width: 100%;
+}
+
+.navbar{
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    background-color: #1b1b1b;
+    margin: 0;
+    padding-top: 25px;
+    padding-bottom: 25px;
+}
+
+.navbar a{
+    color: white;
+    text-decoration: none;
+    font-size: large;
+}
+.gap{
+    padding-top: 25px;
+    padding-bottom: 25px;
+}
+
+#tokenomics{
+    width: 100%;
+}
+
+@media (max-width: 768px) {
+    body {
+        font-size: medium;
+    }
+
+    .countdown-desktop{
+        display: none;
+    }
+
+    .countdown-mobile{
+        display: flex;
+    }
+
+    .gap{
+        padding: 0;
+    }
+
+    .navbar a{
+        font-size: small;
+    }
+
+    .navbar{
+        padding-left: 0;
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+
+    header{
+        padding-top: 25%;
+    }
+
+    h1{
+        display: none;
+    }
+
+    .container{
+        gap: 10px;
+    }
+
+    .container-row {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .dog-image {
+        height: 250px;
+    }
+
+    .arrow {
+        height: 40px;
+        width: 50px;
+    }
+
+    .font-large {
+        font-size: large;
+    }
+
+    .font-xxlarge {
+        font-size: x-large;
+    }
+
+    .icon {
+        height: 40px;
+        width: 40px;
+    }
+
+    #presale{
+        padding-top: 25px;
+        padding-bottom: 25px;
+    }
+
+    #presale ul{
+        font-size: small;
+    }
+
+    #roadmap{
+        padding-top: 25px;
+        padding-bottom: 25px;
+    }
+
+    #tokenomics{
+        padding-top: 25px;
+        padding-bottom: 25px;
+    }
+}
